@@ -9,9 +9,14 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var helloLabel: UILabel!
+    @IBOutlet weak var helloButton: UIButton!
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        helloLabel.text = "Hello World!"
+        helloButton.setTitle("Hello", for: .normal)
     }
 
     override func didReceiveMemoryWarning() {
